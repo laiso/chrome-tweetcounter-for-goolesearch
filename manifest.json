@@ -11,8 +11,10 @@
     {
       "run_at": "document_end",
       "matches": [
-        "http://www.google.com/search*",
-        "http://www.google.co.jp/search*"
+        "http://www.google.com/search*"
+        ,"http://www.google.co.jp/search*"
+        ,"https://www.google.com/search*"
+        ,"https://www.google.co.jp/search*"
       ],
       "js": [
         "contentscript.js"
