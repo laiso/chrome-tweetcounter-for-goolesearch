@@ -1,0 +1,24 @@
+{
+  "name": "Display Tweet & Like! count for Google Search",
+  "version": "0.1.0",
+  "description": "",
+  "permissions": [
+      "http://urls.api.twitter.com/"
+  ],
+  "background_page": "background.html",
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "run_at": "document_end",
+      "matches": [
+        "http://www.google.com/search*",
+        "http://www.google.co.jp/search*"
+      ],
+      "js": [
+        "contentscript.js"
+      ],
+      "css": ["content.css"],
+      "all_frames": true
+    }
+  ]
+}
